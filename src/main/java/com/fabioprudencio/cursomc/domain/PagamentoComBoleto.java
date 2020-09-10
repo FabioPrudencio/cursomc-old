@@ -7,17 +7,17 @@ import javax.persistence.Entity;
 import com.fabioprudencio.cursomc.domain.enums.EstadoPagamento;
 
 @Entity
-public class PagamanentoComBoleto extends Pagamento {
+public class PagamentoComBoleto extends Pagamento {
 	private static final long serialVersionUID = 1L;
 	
 	private Date dataVencimento;
 	private Date dataPagamento;
 	
-	public PagamanentoComBoleto () {
+	public PagamentoComBoleto () {
 		
 	}
 
-	public PagamanentoComBoleto(Integer id, EstadoPagamento estado, Pedido pedido, Date dataVencimento, Date dataPagamento) {
+	public PagamentoComBoleto(Integer id, EstadoPagamento estado, Pedido pedido, Date dataVencimento, Date dataPagamento) {
 		super(id, estado, pedido);
 		this.dataVencimento = dataVencimento;
 		this.dataPagamento = dataPagamento;
